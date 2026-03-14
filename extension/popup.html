@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+
+  <div class="app">
+
+    <textarea id="textInput" placeholder="Paste your text here..."></textarea>
+
+    <div class="display-wrapper">
+      <div id="rsvpDisplay"></div>
+    </div>
+
+    <div class="controls">
+      <button id="repeat" class="control-btn">⟲</button>
+      <button id="start" class="control-btn primary">▶</button>
+      <button id="stop" class="control-btn">⏹</button>
+    </div>
+
+    <div class="slider-section">
+      <input type="range" id="wpmSlider" min="150" max="900" value="300">
+      <div class="wpm-label"><span id="wpmValue">300</span> WPM</div>
+    </div>
+
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
